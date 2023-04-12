@@ -6,6 +6,10 @@
   <ul>
     <list-item v-for="(item, index) in list" :key="index" :msg="item" />
   </ul>
+  <div><router-link to="/">Home</router-link></div>
+  <div><router-link to="/about">About</router-link></div>
+  <div><router-link to="/login">Login</router-link></div>
+  <router-view></router-view>
 </template>
 
 <script>
