@@ -1,5 +1,8 @@
 <template>
-  <div>Home Page</div>
+  <div>
+    Home Page
+    <p>{{ myName }}</p>
+  </div>
 </template>
 
 <script>
@@ -11,7 +14,12 @@ export default {
 
   components: {},
 
-  computed: {},
+  computed: {
+    myName() {
+      console.log(this.$store.state.name);
+      return this.$store.state.name;
+    },
+  },
 
   methods: {},
 };
