@@ -16,7 +16,6 @@ export default {
 
   computed: {
     myName() {
-      console.log(this.$store.state.name);
       return this.$store.state.name;
     },
   },
