@@ -14,6 +14,9 @@ export default createStore({
       // console.log("mutations");
       state.name = str;
     },
+    changeName(state,str){
+        state.name = str;
+    }
   },
   //dispatch和actions做关联
   actions: {
@@ -24,6 +27,11 @@ export default createStore({
         store.commit("setName", str);
       }, 2000);
     },
+    changeName(store,str){
+        setTimeout(() => {
+            store.commit("changeName", str);
+          }, 2000);
+    }
   },
   modules: {},
 });
