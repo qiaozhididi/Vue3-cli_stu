@@ -27,9 +27,9 @@ export default {
       //2.感知到setName这个action，执行store中actions下面的change方法
       //3. commit 提交一个叫做setName的数据变更
       //4. mutation 反知道提交的setName，执行store中的mutations下面的setName方法
-      // this.$store.dispatch("setName");
+      this.$store.dispatch("setName","你好");
       
-      this.$store.commit("setName");//直接提交一个mutation（只涉及同步修改，不考虑异步的情况下）
+      // this.$store.commit("setName");//直接提交一个mutation（只涉及同步修改，不考虑异步的情况下）
     },
   },
 };
